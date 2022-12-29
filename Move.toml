@@ -1,0 +1,14 @@
+[package]
+name = 'test_ditto'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = "985f19d40457a5f09f2d741b1feca6bf7ba1f8a6"
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies]
+ditto-staking = { local = "./ditto-staking-interface" }
+
+[addresses]
+kana_staking = "0x4c36d0311d6cf500b35d1dfa5f9a7e83d3dfeed7f9b8404876e16a4378a73620"
